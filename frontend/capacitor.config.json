@@ -1,0 +1,9 @@
+{
+  "appId": "com.aun.produk",
+  "appName": "Produk",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  }
+}

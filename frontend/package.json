@@ -9,6 +9,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@capacitor/android": "^6.2.3",
+    "@capacitor/cli": "^6.2.3",
+    "@capacitor/core": "^6.2.3",
     "datatables.net-dt": "^2.1.8",
     "datatables.net-react": "^1.0.0",
     "jquery": "^3.7.1",

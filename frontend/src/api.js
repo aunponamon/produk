@@ -1,5 +1,8 @@
 // Dev (npm run dev): lewat proxy Vite. Produksi (dist di Apache): relatif ke /produk/api/
-const BASE = import.meta.env.DEV ? '/api/products.php' : '../../api/products.php';
+// Untuk APK: set VITE_API_BASE ke alamat absolut, mis. http://192.168.1.10/produk/api/products.php
+const BASE =
+  import.meta.env.VITE_API_BASE ||
+  (import.meta.env.DEV ? '/api/products.php' : '../../api/products.php');
 
 async function request(url, options = {}) {
   const res = await fetch(url, {
