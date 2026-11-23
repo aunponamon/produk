@@ -1,7 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<resources>
-    <string name="app_name">Produk</string>
-    <string name="title_activity_main">Produk</string>
-    <string name="package_name">com.aun.produk</string>
-    <string name="custom_url_scheme">com.aun.produk</string>
-</resources>

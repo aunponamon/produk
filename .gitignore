@@ -4,3 +4,5 @@ frontend/dist/
 *.log
 .DS_Store
 api/config.local.php
+frontend/android/
+apk/
