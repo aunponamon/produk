@@ -1,0 +1,7 @@
+# Blokir akses web ke file sensitif
+<FilesMatch "^(database\.sql|HANDOFF\.md|config\.local\.php|config\.local\.example\.php)$">
+    Require all denied
+</FilesMatch>
+
+# Blokir folder .git dan isinya
+RedirectMatch 404 /\.git

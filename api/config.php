@@ -1,10 +1,26 @@
 <?php
 declare(strict_types=1);
 
-const DB_HOST = '127.0.0.1';
-const DB_NAME = 'produk_db';
-const DB_USER = 'root';
-const DB_PASS = '';
+// Kredensial server (mis. Hostinger) ditaruh di config.local.php.
+// File itu di-ignore Git, jadi tidak tertimpa saat git pull.
+$localConfig = __DIR__ . '/config.local.php';
+if (is_file($localConfig)) {
+    require $localConfig;
+}
+
+// Nilai bawaan untuk XAMPP lokal (dipakai bila config.local.php tidak ada).
+if (!defined('DB_HOST')) {
+    define('DB_HOST', '127.0.0.1');
+}
+if (!defined('DB_NAME')) {
+    define('DB_NAME', 'produk_db');
+}
+if (!defined('DB_USER')) {
+    define('DB_USER', 'root');
+}
+if (!defined('DB_PASS')) {
+    define('DB_PASS', '');
+}
 
 function db(): PDO
 {
